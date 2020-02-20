@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    List<gameObject> inventory = new List<gameObject>();
+   // List<gameObject> inventory = new List<gameObject>();
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,7 @@ public class Inventory : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        inventory.Add(collision.gameObject);
-        Destroy(collision.gameObject);
+   //     inventory.Add(collision.gameObject);
+  //      Destroy(collision.gameObject);
     }
 }
