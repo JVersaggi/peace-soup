@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-   // List<gameObject> inventory = new List<gameObject>();
+    List<GameObject> inventory = new List<GameObject>();
    
     // Start is called before the first frame update
     void Start()
@@ -20,7 +20,20 @@ public class Inventory : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-   //     inventory.Add(collision.gameObject);
-  //      Destroy(collision.gameObject);
+      if (collision.gameObject.tag == "turnip")
+      {
+        inventory.Add(collision.gameObject);
+        Destroy(collision.gameObject);
+      }
+      else if(collision.gameObject.tag == "carrot")
+      {
+        inventory.Add(collision.gameObject);
+        Destroy(collision.gameObject);
+      }
+      else if(collision.gameObject.tag == "pumpkin")
+      {
+        inventory.Add(collision.gameObject);
+        Destroy(collision.gameObject);
+      }
     }
 }

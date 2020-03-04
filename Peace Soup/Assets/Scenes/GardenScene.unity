@@ -96,6 +96,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -130,6 +131,10 @@ PrefabInstance:
     - target: {fileID: 1000014111768446, guid: 2cf13a738fc434c46bda5ebf7ca44756, type: 3}
       propertyPath: m_Name
       value: Carrot_Fruit (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000014111768446, guid: 2cf13a738fc434c46bda5ebf7ca44756, type: 3}
+      propertyPath: m_TagString
+      value: carrot
       objectReference: {fileID: 0}
     - target: {fileID: 4000010382424806, guid: 2cf13a738fc434c46bda5ebf7ca44756, type: 3}
       propertyPath: m_LocalPosition.x
@@ -537,6 +542,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -568,11 +574,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (4)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -642,6 +643,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (4)
       objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
@@ -918,6 +924,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -952,6 +959,10 @@ PrefabInstance:
     - target: {fileID: 1000013984154124, guid: 9c0476b14d8c518499bcc0adff155ff8, type: 3}
       propertyPath: m_Name
       value: Turnip_Fruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013984154124, guid: 9c0476b14d8c518499bcc0adff155ff8, type: 3}
+      propertyPath: m_TagString
+      value: turnip
       objectReference: {fileID: 0}
     - target: {fileID: 4000014221411770, guid: 9c0476b14d8c518499bcc0adff155ff8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1091,6 +1102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carrot_Fruit (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014111768446, guid: 2cf13a738fc434c46bda5ebf7ca44756, type: 3}
+      propertyPath: m_TagString
+      value: carrot
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010382424806, guid: 2cf13a738fc434c46bda5ebf7ca44756, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.798025
@@ -1150,11 +1165,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (8)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1225,6 +1235,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1291,6 +1306,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1469,6 +1485,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -1563,11 +1580,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (10)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1638,6 +1650,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -1652,11 +1669,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (7)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1726,6 +1738,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (7)
       objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
@@ -1895,6 +1912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turnip_Fruit (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013984154124, guid: 9c0476b14d8c518499bcc0adff155ff8, type: 3}
+      propertyPath: m_TagString
+      value: turnip
+      objectReference: {fileID: 0}
     - target: {fileID: 4000014221411770, guid: 9c0476b14d8c518499bcc0adff155ff8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.425399
@@ -2017,10 +2038,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2024641893}
     m_Modifications:
-    - target: {fileID: 8110379307089195067, guid: 2e20a4a5747ab144cb4cec5b11000405,
+    - target: {fileID: 393383747918158620, guid: 2e20a4a5747ab144cb4cec5b11000405,
         type: 3}
-      propertyPath: m_Name
-      value: Trees
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3c3495c478eb5fb41b1f855b9a880d07, type: 2}
+    - target: {fileID: 393383747920583164, guid: 2e20a4a5747ab144cb4cec5b11000405,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 393383747920583164, guid: 2e20a4a5747ab144cb4cec5b11000405,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 393383747920583164, guid: 2e20a4a5747ab144cb4cec5b11000405,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.98
       objectReference: {fileID: 0}
     - target: {fileID: 8110379307089195066, guid: 2e20a4a5747ab144cb4cec5b11000405,
         type: 3}
@@ -2077,26 +2113,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 393383747920583164, guid: 2e20a4a5747ab144cb4cec5b11000405,
+    - target: {fileID: 8110379307089195067, guid: 2e20a4a5747ab144cb4cec5b11000405,
         type: 3}
-      propertyPath: m_RootOrder
-      value: 0
+      propertyPath: m_Name
+      value: Trees
       objectReference: {fileID: 0}
-    - target: {fileID: 393383747920583164, guid: 2e20a4a5747ab144cb4cec5b11000405,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 3.28
-      objectReference: {fileID: 0}
-    - target: {fileID: 393383747920583164, guid: 2e20a4a5747ab144cb4cec5b11000405,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -19.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 393383747918158620, guid: 2e20a4a5747ab144cb4cec5b11000405,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 3c3495c478eb5fb41b1f855b9a880d07, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2e20a4a5747ab144cb4cec5b11000405, type: 3}
 --- !u!4 &371968153 stripped
@@ -2185,11 +2206,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (16)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2259,6 +2275,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (16)
       objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
@@ -2428,6 +2449,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Turnip_Fruit (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013984154124, guid: 9c0476b14d8c518499bcc0adff155ff8, type: 3}
+      propertyPath: m_TagString
+      value: turnip
+      objectReference: {fileID: 0}
     - target: {fileID: 4000014221411770, guid: 9c0476b14d8c518499bcc0adff155ff8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.0702114
@@ -2487,11 +2512,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (12)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2561,6 +2581,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (12)
       objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
@@ -2655,11 +2680,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (5)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2730,6 +2750,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2762,8 +2787,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 689102367}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 2
   m_Range: 10
@@ -2950,11 +2976,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (18)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3025,6 +3046,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (18)
+      objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3042,6 +3068,10 @@ PrefabInstance:
     - target: {fileID: 1000012003911730, guid: 0adfa404918648e42a1fb073ef9010d3, type: 3}
       propertyPath: m_Name
       value: Pumpkin_Fruit (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012003911730, guid: 0adfa404918648e42a1fb073ef9010d3, type: 3}
+      propertyPath: m_TagString
+      value: pumpkin
       objectReference: {fileID: 0}
     - target: {fileID: 4000011660475378, guid: 0adfa404918648e42a1fb073ef9010d3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3323,6 +3353,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pumpkin_Fruit (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1000012003911730, guid: 0adfa404918648e42a1fb073ef9010d3, type: 3}
+      propertyPath: m_TagString
+      value: pumpkin
+      objectReference: {fileID: 0}
     - target: {fileID: 4000011660475378, guid: 0adfa404918648e42a1fb073ef9010d3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.775503
@@ -3521,6 +3555,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -3631,6 +3666,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carrot_Fruit
       objectReference: {fileID: 0}
+    - target: {fileID: 1000014111768446, guid: 2cf13a738fc434c46bda5ebf7ca44756, type: 3}
+      propertyPath: m_TagString
+      value: carrot
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010382424806, guid: 2cf13a738fc434c46bda5ebf7ca44756, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.33
@@ -3690,11 +3729,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (13)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3765,6 +3799,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (13)
+      objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3782,6 +3821,10 @@ PrefabInstance:
     - target: {fileID: 1000013984154124, guid: 9c0476b14d8c518499bcc0adff155ff8, type: 3}
       propertyPath: m_Name
       value: Turnip_Fruit (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000013984154124, guid: 9c0476b14d8c518499bcc0adff155ff8, type: 3}
+      propertyPath: m_TagString
+      value: turnip
       objectReference: {fileID: 0}
     - target: {fileID: 4000014221411770, guid: 9c0476b14d8c518499bcc0adff155ff8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3894,6 +3937,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4181,11 +4225,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (1)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4255,6 +4294,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
@@ -4464,6 +4508,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5172,11 +5217,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (14)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5246,6 +5286,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (14)
       objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
@@ -5352,6 +5397,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -5383,11 +5429,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5458,6 +5499,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02
+      objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -5490,8 +5536,9 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1351480579}
   m_Enabled: 1
-  serializedVersion: 9
+  serializedVersion: 10
   m_Type: 1
+  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -5854,11 +5901,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (17)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5928,6 +5970,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (17)
       objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
@@ -6057,11 +6104,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (9)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6132,6 +6174,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6146,11 +6193,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (6)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6220,6 +6262,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (6)
       objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
@@ -6463,11 +6510,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (19)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6538,6 +6580,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (19)
+      objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -6592,6 +6639,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -6679,11 +6727,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (2)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6753,6 +6796,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
@@ -6972,6 +7020,10 @@ PrefabInstance:
     - target: {fileID: 1000012003911730, guid: 0adfa404918648e42a1fb073ef9010d3, type: 3}
       propertyPath: m_Name
       value: Pumpkin_Fruit (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012003911730, guid: 0adfa404918648e42a1fb073ef9010d3, type: 3}
+      propertyPath: m_TagString
+      value: pumpkin
       objectReference: {fileID: 0}
     - target: {fileID: 4000011660475378, guid: 0adfa404918648e42a1fb073ef9010d3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -7304,7 +7356,7 @@ Transform:
   - {fileID: 54588284}
   - {fileID: 1264565546}
   m_Father: {fileID: 2024641893}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1635228153
 PrefabInstance:
@@ -7577,11 +7629,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (11)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7651,6 +7698,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (11)
       objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
@@ -7902,7 +7954,7 @@ Transform:
   m_LocalScale: {x: 1, y: 6.6766, z: 3.2368455}
   m_Children: []
   m_Father: {fileID: 2024641893}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1784061484
 BoxCollider:
@@ -7931,6 +7983,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -7965,6 +8018,10 @@ PrefabInstance:
     - target: {fileID: 1000012003911730, guid: 0adfa404918648e42a1fb073ef9010d3, type: 3}
       propertyPath: m_Name
       value: Pumpkin_Fruit
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000012003911730, guid: 0adfa404918648e42a1fb073ef9010d3, type: 3}
+      propertyPath: m_TagString
+      value: pumpkin
       objectReference: {fileID: 0}
     - target: {fileID: 4000011660475378, guid: 0adfa404918648e42a1fb073ef9010d3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8171,11 +8228,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (3)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8245,6 +8297,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
@@ -8323,11 +8380,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 371968153}
     m_Modifications:
-    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
-        type: 3}
-      propertyPath: m_Name
-      value: Tree_02 (15)
-      objectReference: {fileID: 0}
     - target: {fileID: 7857299829693090026, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8397,6 +8449,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7857299829693584586, guid: d5cbc450be0c8d3498e3f81826667284,
+        type: 3}
+      propertyPath: m_Name
+      value: Tree_02 (15)
       objectReference: {fileID: 0}
     - target: {fileID: 7857299829695515146, guid: d5cbc450be0c8d3498e3f81826667284,
         type: 3}
@@ -8676,10 +8733,10 @@ Transform:
   m_LocalPosition: {x: -13.585503, y: -10.010681, z: -11.398055}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 371968154}
   - {fileID: 1784061483}
   - {fileID: 2129740891}
   - {fileID: 1601392513}
-  - {fileID: 371968154}
   m_Father: {fileID: 1659793289}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8923,5 +8980,5 @@ Transform:
   - {fileID: 274027059}
   - {fileID: 258690887}
   m_Father: {fileID: 2024641893}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
