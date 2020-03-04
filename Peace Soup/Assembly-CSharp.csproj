@@ -63,7 +63,7 @@
     <Compile Include="Assets\Scripts\Inventory.cs" />
     <Compile Include="Assets\Scripts\SoupCombos.cs" />
     <Compile Include="Assets\Scripts\tempCharacter.cs" />
-    <None Include="Assets\Interior_Assets\Kitchen Asset\README.txt" />
+    <None Include="Assets\Outdoor_Prefabs\Interior_Assets\Kitchen Asset\README.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/byrdc/Documents/GitHub/peace-soup/Peace Soup/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
