@@ -10,8 +10,8 @@ public class player_movement : MonoBehaviour
     public float movement_speed;
     public bool is_grounded = false;
     public bool has_gun = false;
-    private GameObject weapon_to_pickup;
-    public GameObject current_weapon = null;
+    private GameObject food_to_pickup;
+    public GameObject current_food = null;
     private float total_rotation;
     // Start is called before the first frame update
     void Start()
@@ -34,43 +34,20 @@ public class player_movement : MonoBehaviour
             player_body.AddForce(new Vector3(0, jump_height, 0), ForceMode.Impulse);
             is_grounded = false;
         }
-        if(current_weapon != null)
+        if(current_food != null)
         {
-            //current_weapon.GetComponent<yellow_fire>().Fire();
-            current_weapon = current_weapon.GetComponent<pickup_behavior>().Drop();
+            //current_food.GetComponent<yellow_fire>().Fire();
+            current_food = current_food.GetComponent<pickup_behavior>().Drop();
         }
 
-        if (weapon_to_pickup != null)
+        if (food_to_pickup != null)
         {
-            if(Input.GetKeyDown(KeyCode.E) && current_weapon == null)
+            if(Input.GetKeyDown(KeyCode.E))
             {
-                weapon_to_pickup.GetComponent<pickup_behavior>().PickUp(this.transform);
-                current_weapon = weapon_to_pickup;
-                //weapon_to_pickup.transform.parent = cam.transform;
-                //weapon_to_pickup.transform.position = cam.transform.position + transform.right;
-                //weapon_to_pickup.transform.rotation = transform.rotation;
-                
-                //weapon_to_pickup.transform.Rotate(total_rotation/2, 0, 0);
-                //weapon_to_pickup.GetComponent<Rigidbody>().isKinematic = true;
-                //current_weapon = weapon_to_pickup;
-                //weapon_to_pickup = null;
-            }
-
-            else if (Input.GetKeyDown(KeyCode.E) && current_weapon != null)
-            {
-                current_weapon.transform.parent = null;
-                current_weapon.transform.position = weapon_to_pickup.transform.position;
-                current_weapon.transform.rotation = weapon_to_pickup.transform.rotation;
-                current_weapon.GetComponent<Rigidbody>().isKinematic = false;
-                current_weapon = null;
-
-                weapon_to_pickup.transform.parent = cam.transform;
-                weapon_to_pickup.transform.position = cam.transform.position + transform.right;
-                //weapon_to_pickup.transform.Rotate(total_rotation/2, 0, 0);
-                weapon_to_pickup.transform.rotation = cam.transform.rotation;
-                weapon_to_pickup.GetComponent<Rigidbody>().isKinematic = true;
-                current_weapon = weapon_to_pickup;
-                weapon_to_pickup = null;
+                food_to_pickup.GetComponent<pickup_behavior>().PickUp(this.transform);
+                //current_food = food_to_pickup;
+                Debug.Log(food_to_pickup);
+               
             }
         }
 
@@ -82,9 +59,9 @@ public class player_movement : MonoBehaviour
         {
             total_rotation = total_rotation + vertical;
             cam.transform.Rotate(vertical, 0, 0);
-            if(current_weapon != null)
+            if(current_food != null)
             {
-                //current_weapon.transform.Rotate(vertical/2, 0, 0);
+                //current_food.transform.Rotate(vertical/2, 0, 0);
             }
         }
         
@@ -117,16 +94,16 @@ public class player_movement : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         
-        if (other.gameObject.tag == "weapon_pickup")
+        if (other.gameObject.tag == "food_pickup")
         {
             Debug.Log("Can pick up");
-            weapon_to_pickup = other.gameObject.transform.parent.gameObject;
+            food_to_pickup = other.gameObject.transform.parent.gameObject;
         }
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.tag == "weapon_pickup")
+        if (other.gameObject.tag == "food_pickup")
         {
             Debug.Log("Can't pick up");
         }
@@ -134,7 +111,7 @@ public class player_movement : MonoBehaviour
 
     public bool has_ball()
     {
-        if(current_weapon != null)
+        if(current_food != null)
         {
             return true;
         }

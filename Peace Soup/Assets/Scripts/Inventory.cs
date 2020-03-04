@@ -20,7 +20,7 @@ public class Inventory : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-      inventory.Add(collision.GameObject);
+      inventory.Add(collision.transform.gameObject);
       Destroy(collision.gameObject);
     }
 }

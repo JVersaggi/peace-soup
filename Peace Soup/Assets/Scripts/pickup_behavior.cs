@@ -14,17 +14,7 @@ public class pickup_behavior : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (adopted_parent != null)
-        {
-            if (adopted_parent.tag == "Player")
-            {
-                transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, Camera.main.nearClipPlane * 7));
-            }
-            else
-            {
-                transform.position = adopted_parent.position + adopted_parent.up * 2;
-            }
-        }
+        
     }
 
     public void PickUp(Transform parent_to_be)
@@ -34,6 +24,7 @@ public class pickup_behavior : MonoBehaviour
             adopted_parent = parent_to_be;
             this.GetComponent<Rigidbody>().isKinematic = true;
             transform.position = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, Camera.main.nearClipPlane * 7));
+            Debug.Log(transform.tag);
         }
         else
         {
