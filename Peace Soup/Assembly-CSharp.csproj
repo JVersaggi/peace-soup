@@ -57,6 +57,8 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Inventory.cs" />
      <Compile Include="Assets\Scripts\SoupCombos.cs" />
+     <Compile Include="Assets\Scripts\pickup_behavior.cs" />
+     <Compile Include="Assets\Scripts\player_movement.cs" />
      <Compile Include="Assets\Scripts\tempCharacter.cs" />
      <None Include="Assets\Interior_Assets\Kitchen Asset\README.txt" />
  <Reference Include="Unity.Timeline.Editor">

@@ -5,11 +5,15 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     List<GameObject> inventory = new List<GameObject>();
+<<<<<<< HEAD
    
+=======
+    private Rigidbody player_body;
+>>>>>>> Controller
     // Start is called before the first frame update
     void Start()
     {
-        
+      player_body = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -20,6 +24,7 @@ public class Inventory : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+<<<<<<< HEAD
       if (collision.gameObject.tag == "turnip")
       {
         inventory.Add(collision.gameObject);
@@ -35,5 +40,9 @@ public class Inventory : MonoBehaviour
         inventory.Add(collision.gameObject);
         Destroy(collision.gameObject);
       }
+=======
+      inventory.Add(collision.transform.gameObject);
+      Destroy(collision.gameObject);
+>>>>>>> Controller
     }
 }
