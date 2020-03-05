@@ -13,6 +13,7 @@ public class player_movement : MonoBehaviour
     private GameObject food_to_pickup;
     public GameObject current_food = null;
     private float total_rotation;
+    private bool can_cook = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -48,6 +49,15 @@ public class player_movement : MonoBehaviour
                 //current_food = food_to_pickup;
                 Debug.Log(food_to_pickup);
                
+            }
+        }
+
+        if(can_cook == true)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                this.gameObject.GetComponent<SoupCombos>().Interact(this.gameObject);
+
             }
         }
 
@@ -99,6 +109,10 @@ public class player_movement : MonoBehaviour
             Debug.Log("Can pick up");
             food_to_pickup = other.gameObject.transform.parent.gameObject;
         }
+        if (other.gameObject.tag == "cook")
+        {
+            can_cook = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -106,7 +120,13 @@ public class player_movement : MonoBehaviour
         if (other.gameObject.tag == "food_pickup")
         {
             Debug.Log("Can't pick up");
+            food_to_pickup = null;
         }
+        if (other.gameObject.tag == "cook")
+        {
+            can_cook = false;
+        }
+
     }
 
     public bool has_ball()

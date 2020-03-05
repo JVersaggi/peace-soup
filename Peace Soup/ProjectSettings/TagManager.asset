@@ -5,6 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - food_pickup
+  - water_bucket
+  - turnip
+  - carrot
+  - pumpkin
+  - cook
   layers:
   - Default
   - TransparentFX

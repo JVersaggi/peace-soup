@@ -66,7 +66,7 @@
     <Compile Include="Assets\Scripts\SoupCombos.cs" />
     <Compile Include="Assets\Scripts\pickup_behavior.cs" />
     <Compile Include="Assets\Scripts\player_movement.cs" />
-    <Compile Include="Assets\Scripts\tempCharacter.cs" />
+    <Compile Include="Assets\Scripts\water_pick.cs" />
     <None Include="Assets\Outdoor_Prefabs\Interior_Assets\Kitchen Asset\README.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>E:/GIT/peace-soup/Peace Soup/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
