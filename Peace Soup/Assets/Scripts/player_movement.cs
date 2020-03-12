@@ -14,6 +14,7 @@ public class player_movement : MonoBehaviour
     public GameObject current_food = null;
     private float total_rotation;
     private bool can_cook = false;
+    public bool can_reset = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +40,14 @@ public class player_movement : MonoBehaviour
         {
             //current_food.GetComponent<yellow_fire>().Fire();
             current_food = current_food.GetComponent<pickup_behavior>().Drop();
+        }
+
+        if(can_reset == true)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                this.GetComponent<reset_behavior>().reset_game();
+            }
         }
 
         if (food_to_pickup != null)
@@ -113,6 +122,10 @@ public class player_movement : MonoBehaviour
         {
             can_cook = true;
         }
+        if(other.gameObject.tag == "reset_range")
+        {
+            can_reset = true;
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -125,6 +138,10 @@ public class player_movement : MonoBehaviour
         if (other.gameObject.tag == "cook")
         {
             can_cook = false;
+        }
+        if (other.gameObject.tag == "reset_range")
+        {
+            can_reset = false;
         }
 
     }

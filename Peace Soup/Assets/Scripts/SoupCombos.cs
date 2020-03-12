@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class SoupCombos : MonoBehaviour
 {
+    public AudioSource sizz;
 
     private string[] turnip_array = { "", "Raw ", "Wild ", "Fresh ", "Succulent ", "Turnip " };
     private string[] carrot_array = {"", "Plain ", "Juicy ", "Hearty ", "Creamy ", "Carrot "};
@@ -53,7 +54,7 @@ public class SoupCombos : MonoBehaviour
         Debug.Log(response);
         soup_text.text = response;
         StartCoroutine(Fade());
-
+        sizz.Play();
     }
 
     public IEnumerator Fade()

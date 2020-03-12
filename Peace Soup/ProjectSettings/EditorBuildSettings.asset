@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/GardenScene.unity
+    guid: 612106a2c9e2ddb4495807e0cff417a0
   m_configObjects: {}

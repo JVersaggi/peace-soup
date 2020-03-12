@@ -15,6 +15,9 @@ public class Inventory : MonoBehaviour
     public Text water_get;
     public Text soup_text;
 
+    public AudioSource plop;
+    public AudioSource water;
+
     int turnip_count = 0;
     int carrot_count = 0;
     int pumpkin_count = 0;
@@ -57,6 +60,7 @@ public class Inventory : MonoBehaviour
                 pumpkin_count += 1;
                 pumpkin_text.text = pumpkin_count.ToString();
             }
+            plop.Play();
         }
         else if (item.tag == "water_bucket")
         {
@@ -64,6 +68,7 @@ public class Inventory : MonoBehaviour
             Debug.Log("WATER");
             item.GetComponent<pickup_behavior>().enabled = false;
             water_get.gameObject.SetActive(true);
+            water.Play();
         }
     }
 
